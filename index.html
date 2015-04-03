@@ -91,7 +91,7 @@ function aggregateTranscript(data, callBack) {
             userQuery += " or Id eq " + transcriptData[j].UserID.toString();
         }
     }
-    getUserData("https://demopm.csod.com/services/dwdata/User?"+userQuery);
+    getUserData("https://bp-stg.csod.com/services/dwdata/User?"+userQuery);
 
 }
 function aggregateUserData(data, callBack) {
@@ -140,7 +140,7 @@ function findByUserId(userId){
 }
 
 
-getTranscriptData("https://demopm.csod.com/services/dwdata/Transcript?$select=TranscriptStatus&$filter=TranscriptStatus eq 64");
+getTranscriptData("https://bp-stg.csod.com/services/dwdata/Transcript?$select=TranscriptStatus&$filter=TranscriptStatus eq 64");
 </script>
 
 </body>
